@@ -4,7 +4,7 @@ import { makeStyles, Card, CardContent, Grid, Typography } from '@material-ui/co
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import RadioIcon from '@material-ui/icons/Radio';
 
-import classicRadioImage from "../../../../assets/images/radios/classic.png";
+import radioXRadioImage from "../../../../assets/images/radios/radiox.jpg";
 import capitalRadioImage from "../../../../assets/images/radios/capital.png";
 import bbc1RadioImage from "../../../../assets/images/radios/bbcradio1.jpg";
 
@@ -46,13 +46,13 @@ const MusicRadioCard = (props) => {
                     <Grid item>
                         <a 
                             target="_blank"
-                            className="js-popupPlayer classicRockAudioPlayer" 
-                            href="https://ukradiolive.com/classic-fm#server342" 
+                            className="js-popupPlayer radioXAudioPlayer" 
+                            href="https://ukradiolive.com/radio-x#server364"
                             title="Start online radio!"
                         >
                             <img 
                                 width="100"
-                                src={classicRadioImage}
+                                src={radioXRadioImage}
                                 title="Start online radio!" 
                                 alt="Start online radio!"
                             />
