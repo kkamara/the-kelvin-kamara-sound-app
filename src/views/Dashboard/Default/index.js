@@ -19,8 +19,8 @@ import RevenuChartCardData from './chart/revenu-chart';
 import { 
   MusicCard,
   WhiteNoiseCard,
-  AnnoyingSoundCard,
-  AnnoyingSound2Card,
+  MusicRadioSoundCard,
+  MusicRadioSoundCard2,
   MusicRadioCard,
   TalkingRadioCard,
   ApexChartCard,
@@ -78,7 +78,7 @@ const Default = () => {
                         />
                     </Grid>
                     <Grid item lg={3} sm={6} xs={12}>
-                        <AnnoyingSoundCard
+                        <MusicRadioSoundCard
                             color={theme.palette.error.main}
                         />
                     </Grid>
@@ -91,7 +91,7 @@ const Default = () => {
                         />
                     </Grid>
                     <Grid item lg={3} sm={6} xs={12}>
-                        <AnnoyingSound2Card
+                        <MusicRadioSoundCard2
                             color={theme.palette.primary.main}
                         />
                     </Grid>

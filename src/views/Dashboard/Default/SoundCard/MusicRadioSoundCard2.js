@@ -3,9 +3,8 @@ import React from 'react';
 import { makeStyles, Card, CardContent, Grid, Typography } from '@material-ui/core';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GraphicEqIcon from '@material-ui/icons/GraphicEq';
-import ReactAudioPlayer from 'react-audio-player';
 
-import AnnoyingSound from '../../../../assets/audio/The-most-annoying-sound-1-hour-128-kbps.mp3'
+import smoothRadioImage from "../../../../assets/images/radios/smoothradio.png";
 
 const useStyles = makeStyles((theme) => ({
     secondary: {
@@ -24,7 +23,7 @@ const soundStyles = {
     width: '300px',
 };
 
-const MusicRadioCard = (props) => {
+const MusicRadioSoundCard2 = (props) => {
     const { color, } = props;
     const classes = useStyles();
 
@@ -38,10 +37,10 @@ const MusicRadioCard = (props) => {
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item>
                         <Typography variant="h3" style={{ color: color }}>
-                            Annoying Sound
+                            Music Radio Sound
                         </Typography>
                         <Typography variant="subtitle1" className={classes.secondary}>
-                            The most annoying sound 1 hour <i>(128 kbps)</i>
+                            Music radios
                         </Typography>
                     </Grid>
                     <Grid item>
@@ -50,12 +49,19 @@ const MusicRadioCard = (props) => {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <ReactAudioPlayer
-                            src={AnnoyingSound}
-                            loop
-                            controls
-                            style={soundStyles}
-                        />
+                        <a 
+                            target="_blank"
+                            className="js-popupPlayer smoothRadioAudioPlayer" 
+                            href="https://ukradiolive.com/smooth-radio#server652" 
+                            title="Start online radio!"
+                        >
+                            <img 
+                                width="100"
+                                src={smoothRadioImage} 
+                                title="Start online radio!" 
+                                alt="Start online radio!"
+                            />
+                        </a>
                     </Grid>
                 </Grid>
             </CardContent>
@@ -73,4 +79,4 @@ const MusicRadioCard = (props) => {
     );
 };
 
-export default MusicRadioCard;
+export default MusicRadioSoundCard2;
