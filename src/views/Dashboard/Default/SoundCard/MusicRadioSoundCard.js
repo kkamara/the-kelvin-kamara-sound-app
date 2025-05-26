@@ -2,9 +2,8 @@ import React from 'react';
 import { makeStyles, Card, CardContent, Grid, Typography } from '@material-ui/core';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GraphicEqIcon from '@material-ui/icons/GraphicEq';
-import ReactAudioPlayer from 'react-audio-player';
 
-import AnnoyingSound from '../../../../assets/audio/The-most-annoying-sound-1-hour-128-kbps.mp3'
+import radioXClassicRockRadioImage from "../../../../assets/images/radios/radioxclassicrock.png";
 
 const useStyles = makeStyles((theme) => ({
     secondary: {
@@ -23,7 +22,7 @@ const soundStyles = {
     width: '300px',
 };
 
-const AnnoyingSoundCard = (props) => {
+const MusicRadioSoundCard = (props) => {
     const { color, } = props;
     const classes = useStyles();
 
@@ -37,10 +36,10 @@ const AnnoyingSoundCard = (props) => {
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item>
                         <Typography variant="h3" style={{ color: color }}>
-                            Annoying Sound
+                            Music Radio Sound
                         </Typography>
                         <Typography variant="subtitle1" className={classes.secondary}>
-                            The most annoying sound 1 hour <i>(128 kbps)</i>
+                            Music radios
                         </Typography>
                     </Grid>
                     <Grid item>
@@ -49,12 +48,19 @@ const AnnoyingSoundCard = (props) => {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <ReactAudioPlayer
-                            src={AnnoyingSound}
-                            loop
-                            controls
-                            style={soundStyles}
-                        />
+                        <a 
+                            target="_blank"
+                            className="js-popupPlayer radioXClassicRockAudioPlayer" 
+                            href="https://ukradiolive.com/radio-x-classic-rock#server1174" 
+                            title="Start online radio!"
+                        >
+                            <img 
+                                width="100"
+                                src={radioXClassicRockRadioImage} 
+                                title="Start online radio!" 
+                                alt="Start online radio!"
+                            />
+                        </a>
                     </Grid>
                 </Grid>
             </CardContent>
@@ -72,4 +78,4 @@ const AnnoyingSoundCard = (props) => {
     );
 };
 
-export default AnnoyingSoundCard;
+export default MusicRadioSoundCard;
