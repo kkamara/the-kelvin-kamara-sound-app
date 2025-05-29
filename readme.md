@@ -71,9 +71,7 @@ The Kelvin Kamara sound app planning design.
 
 ## Misc
 
-The audio players that play atmospheric sound change time every 10 minutes.
-
-PTSD Healing download (64 kbps): [link](https://drive.google.com/file/d/1VXYLEFUG6GB8jz-0f9cRcvCPje2EZSOB/view?usp=sharing).
+The audio players for the Construction Site Sound Effects change time every 10 minutes.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
