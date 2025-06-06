@@ -4,7 +4,7 @@ import { useTheme } from '@material-ui/styles';
 import { Box, Card, CardContent, CardHeader, Divider, Hidden, Grid, Typography, useMediaQuery } from '@material-ui/core';
 import ReactAudioPlayer from 'react-audio-player';
 
-import tenHoursOfRain from '../../../../assets/audio/10-Hours-of-Rain-Sound-Relaxation-Ultimate-Stress-Relief-Deep-Sleep-Meditation-Yoga-128-kbps.mp3';
+import tenHoursOfRain from '../../../../assets/audio/10-Hours-of-Rain-Sound-Relaxation-Ultimate-Stress-Relief-Deep-Sleep-Meditation-Yoga-320-kbps.mp3';
 
 const soundStyles = {
     width: '100%',
@@ -78,7 +78,7 @@ const ApexChartCard = (props) => {
                     <Grid container direction={matchDownMd && !matchDownXs ? 'row' : 'column'}>
                         <label>
                             10 Hours of Rain Sound Relaxation / Ultimate Stress Relief,
-                            Deep Sleep, Meditation, Yoga,... <i>(128 kbps)</i>
+                            Deep Sleep, Meditation, Yoga,... <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
                             id="tenHoursOfRainAudioPlayer1"
