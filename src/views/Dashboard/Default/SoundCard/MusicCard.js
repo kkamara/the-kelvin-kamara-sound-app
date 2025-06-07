@@ -7,7 +7,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 import MusicSound from '../../../../assets/audio/Deep-Focus-Music-For-Studying-Concentration-and-Work-320-kbps.mp3'
 
-const musicSoundVolume = 0.25;
+const musicSoundVolume = 0.15;
 
 const useStyles = makeStyles((theme) => ({
     secondary: {
