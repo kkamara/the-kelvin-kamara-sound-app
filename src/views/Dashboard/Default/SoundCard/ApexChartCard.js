@@ -4,13 +4,13 @@ import { useTheme } from '@material-ui/styles';
 import { Box, Card, CardContent, CardHeader, Divider, Hidden, Grid, Typography, useMediaQuery } from '@material-ui/core';
 import ReactAudioPlayer from 'react-audio-player';
 
-import tenHoursOfRain from '../../../../assets/audio/10-Hours-of-Rain-Sound-Relaxation-Ultimate-Stress-Relief-Deep-Sleep-Meditation-Yoga-320-kbps.mp3';
+import heavyRain from '../../../../assets/audio/HEAVY-RAIN-at-Night-10-Hours-for-Sleeping-Relax-Study-insomnia-Reduce-Stress-Heavy-Rain-Sounds-320-kbps.mp3';
 
 const soundStyles = {
     width: '100%',
 };
 
-const tenHoursOfRainVolume = 0.75;
+const heavyRainVolume = 0.30;
 
 const ApexChartCard = (props) => {
     const theme = useTheme();
@@ -77,16 +77,16 @@ const ApexChartCard = (props) => {
                     </Grid>
                     <Grid container direction={matchDownMd && !matchDownXs ? 'row' : 'column'}>
                         <label>
-                            10 Hours of Rain Sound Relaxation / Ultimate Stress Relief,
-                            Deep Sleep, Meditation, Yoga,... <i>(320 kbps)</i>
+                            HEAVY RAIN at Night 10 Hours for Sleeping, Relax, Study, insomnia,
+                            Reduce Stress. Heavy Rain Sounds <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
-                            id="tenHoursOfRainAudioPlayer1"
-                            src={tenHoursOfRain}
+                            id="heavyRainAudioPlayer1"
+                            src={heavyRain}
                             loop
                             controls
                             style={soundStyles}
-                            volume={tenHoursOfRainVolume}
+                            volume={heavyRainVolume}
                         />
                     </Grid>
                 </Grid>
