@@ -10,7 +10,7 @@ const soundStyles = {
     width: '100%',
 };
 
-const heavyRainVolume = 0.30;
+const heavyRainVolume = 0.15;
 
 const ApexChartCard = (props) => {
     const theme = useTheme();
