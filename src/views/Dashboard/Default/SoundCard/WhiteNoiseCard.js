@@ -21,7 +21,7 @@ const soundStyles = {
     width: '100%',
 };
 
-const whiteNoiseVolume = 0.05;
+const whiteNoiseVolume = 0.25;
 
 const whiteNoiseStartTimeInMinutes = 0;
 
