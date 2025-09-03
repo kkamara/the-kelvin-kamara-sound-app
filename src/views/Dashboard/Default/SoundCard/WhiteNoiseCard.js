@@ -8,7 +8,7 @@ import { randomTimeIntervalMilliseconds, } from '../../../Utils/Constants';
 
 import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-ui/core';
 
-import WhiteNoiseSound from '../../../../assets/audio/Construction-Site-Sound-Effects-8-HOURS-with-Video-Hammering-Hand-Sawing-Wood-Drilling-etc-320-kbps.mp3';
+import WhiteNoiseSound from '../../../../assets/audio/RESTAURANT-AMBIENCE-10H-Busy-Coffee-Shop-Background-Noise-128-kbps.m4a';
 
 const useStyles = makeStyles((theme) => ({
     content: {
