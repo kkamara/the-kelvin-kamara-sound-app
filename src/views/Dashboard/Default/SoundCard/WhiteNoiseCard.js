@@ -37,8 +37,8 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    Construction Site Sound Effects - 8 HOURS - with Video. Hammering,
-                                    Hand Sawing Wood, Drilling etc <i>(320 kbps)</i>
+                                    RESTAURANT AMBIENCE • 10H Busy Coffee Shop
+                                    Background Noise <i>(128 kbps)</i>
                                 </Typography>
                             </Grid>
                             <Grid item>
