@@ -50,7 +50,7 @@ const TalkingRadioCard = (props) => {
                             title="Start online radio!"
                         >
                             <img 
-                                width="75px"
+                                width="70px"
                                 src={timesRadioImage}
                                 title="Start online radio!" 
                                 alt="Start online radio!"
@@ -63,7 +63,7 @@ const TalkingRadioCard = (props) => {
                             title="Start online radio!"
                         >
                             <img 
-                                width="75px"
+                                width="70px"
                                 src={lbcRadioImage}
                                 title="Start online radio!" 
                                 alt="Start online radio!"
