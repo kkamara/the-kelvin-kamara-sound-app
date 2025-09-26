@@ -6,7 +6,7 @@ import RadioIcon from '@material-ui/icons/Radio';
 
 import radioXRadioImage from "../../../../assets/images/radios/radiox.jpg";
 import capitalRadioImage from "../../../../assets/images/radios/capital.png";
-import capitalDanceRadioImage from "../../../../assets/images/radios/capitaldance.png";
+import capitalXtraRadioImage from "../../../../assets/images/radios/capitalxtra.png";
 
 import "./MusicRadioCard.scss";
 
@@ -51,7 +51,6 @@ const MusicRadioCard = (props) => {
                             title="Start online radio!"
                         >
                             <img 
-                                width="100"
                                 src={radioXRadioImage}
                                 title="Start online radio!" 
                                 alt="Start online radio!"
@@ -64,7 +63,6 @@ const MusicRadioCard = (props) => {
                             title="Start online radio!"
                         >
                             <img 
-                                width="100"
                                 src={capitalRadioImage}
                                 title="Start online radio!" 
                                 alt="Start online radio!"
@@ -72,13 +70,12 @@ const MusicRadioCard = (props) => {
                         </a>
                         <a 
                             target="_blank"
-                            className="js-popupPlayer capitalDanceAudioPlayer" 
-                            href="https://ukradiolive.com/capital-dance#server948" 
+                            className="js-popupPlayer capitalXtraAudioPlayer" 
+                            href="https://ukradiolive.com/capital-xtra#server361" 
                             title="Start online radio!"
                         >
                             <img 
-                                width="100"
-                                src={capitalDanceRadioImage} 
+                                src={capitalXtraRadioImage} 
                                 title="Start online radio!" 
                                 alt="Start online radio!"
                             />
