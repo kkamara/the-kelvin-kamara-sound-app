@@ -6,7 +6,7 @@ import RadioIcon from '@material-ui/icons/Radio';
 
 import radioXRadioImage from "../../../../assets/images/radios/radiox.jpg";
 import capitalRadioImage from "../../../../assets/images/radios/capital.png";
-import capitalXtraRadioImage from "../../../../assets/images/radios/capitalxtra.png";
+import bbc1XtraRadioImage from "../../../../assets/images/radios/bbc1xtra.jpg";
 
 import "./MusicRadioCard.scss";
 
@@ -70,12 +70,12 @@ const MusicRadioCard = (props) => {
                         </a>
                         <a 
                             target="_blank"
-                            className="js-popupPlayer capitalXtraAudioPlayer" 
-                            href="https://ukradiolive.com/capital-xtra#server361" 
+                            className="js-popupPlayer bbc1XtraAudioPlayer" 
+                            href="https://ukradiolive.com/bbc-1xtra#server1319" 
                             title="Start online radio!"
                         >
                             <img 
-                                src={capitalXtraRadioImage} 
+                                src={bbc1XtraRadioImage} 
                                 title="Start online radio!" 
                                 alt="Start online radio!"
                             />
