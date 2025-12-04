@@ -10,8 +10,6 @@ const soundStyles = {
     width: '100%',
 };
 
-const heavyRainVolume = 0.1;
-
 const ApexChartCard = (props) => {
     const theme = useTheme();
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
@@ -86,7 +84,6 @@ const ApexChartCard = (props) => {
                             loop
                             controls
                             style={soundStyles}
-                            volume={heavyRainVolume}
                         />
                     </Grid>
                 </Grid>

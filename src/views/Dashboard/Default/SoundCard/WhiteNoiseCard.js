@@ -19,8 +19,6 @@ const soundStyles = {
     width: '100%',
 };
 
-const whiteNoiseVolume = 0.2;
-
 const WhiteNoiseCard = (props) => {
     const classes = useStyles();
     const theme = useTheme();
@@ -65,7 +63,6 @@ const WhiteNoiseCard = (props) => {
                     loop
                     controls
                     style={soundStyles}
-                    volume={whiteNoiseVolume}
                 />
             </CardContent>
         </Card>
