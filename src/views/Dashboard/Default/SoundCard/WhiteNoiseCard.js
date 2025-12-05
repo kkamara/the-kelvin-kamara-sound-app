@@ -6,7 +6,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-ui/core';
 
-import WhiteNoiseSound from '../../../../assets/audio/10-Hours-of-People-Talking-Ambience-White-Noise-256-kbps.mp3';
+// import WhiteNoiseSound from '../../../../assets/audio/10-Hours-of-People-Talking-Ambience-White-Noise-256-kbps.mp3';
 
 const useStyles = makeStyles((theme) => ({
     content: {
@@ -35,8 +35,8 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    10 Hours of People Talking | Ambience 
-                                    | White Noise <i>(256 kbps)</i>
+                                    {/* 10 Hours of People Talking | Ambience 
+                                    | White Noise <i>(256 kbps)</i> */}
                                 </Typography>
                             </Grid>
                             <Grid item>
@@ -57,13 +57,13 @@ const WhiteNoiseCard = (props) => {
                         )}
                     </Grid>
                 </Box>
-                <ReactAudioPlayer
+                {/* <ReactAudioPlayer
                     id="whiteNoiseAudioPlayer"
                     src={WhiteNoiseSound}
                     loop
                     controls
                     style={soundStyles}
-                />
+                /> */}
             </CardContent>
         </Card>
     );
