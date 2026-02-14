@@ -5,7 +5,7 @@ import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 import ReactAudioPlayer from 'react-audio-player';
 
-import MusicSound from '../../../../assets/audio/Deep-Focus-Music-For-Studying-Concentration-and-Work-320-kbps.mp3'
+import MusicSound from '../../../../assets/audio/Upbeat-Study-Music-Cognition-Enhancer-Clearer-and-Faster-Thinking-64-kbps.mp3'
 
 const useStyles = makeStyles((theme) => ({
     secondary: {
@@ -41,8 +41,8 @@ const MusicCard = (props) => {
                             Music Sound
                         </Typography>
                         <Typography variant="subtitle1" className={classes.secondary}>
-                            Deep Focus - Music For Studying, Concentration
-                            and Work <i>(320 kbps)</i>
+                            Upbeat Study Music Cognition Enhancer Clearer
+                            and Faster Thinking <i>(64 kbps)</i>
                         </Typography>
                     </Grid>
                     <Grid item>
