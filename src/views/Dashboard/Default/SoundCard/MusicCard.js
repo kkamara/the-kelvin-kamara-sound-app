@@ -5,7 +5,7 @@ import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 import ReactAudioPlayer from 'react-audio-player';
 
-import MusicSound from '../../../../assets/audio/Upbeat-Study-Music-Cognition-Enhancer-Clearer-and-Faster-Thinking-64-kbps.mp3'
+// import MusicSound from '../../../../assets/audio/'
 
 const useStyles = makeStyles((theme) => ({
     secondary: {
@@ -43,6 +43,8 @@ const MusicCard = (props) => {
                         <Typography variant="subtitle1" className={classes.secondary}>
                             Upbeat Study Music Cognition Enhancer Clearer
                             and Faster Thinking <i>(64 kbps)</i>
+                            <br/>
+                            <b>Removed on request from owner.</b>
                         </Typography>
                     </Grid>
                     <Grid item>
@@ -51,12 +53,12 @@ const MusicCard = (props) => {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <ReactAudioPlayer
+                        {/* <ReactAudioPlayer
                             src={MusicSound}
                             loop
                             controls
                             style={soundStyles}
-                        />
+                        /> */}
                     </Grid>
                 </Grid>
             </CardContent>
