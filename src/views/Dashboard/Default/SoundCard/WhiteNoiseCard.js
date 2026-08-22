@@ -35,8 +35,7 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    {/* 10 Hours of People Talking | Ambience 
-                                    | White Noise <i>(256 kbps)</i> */}
+                                    Deep Techno 24/7 🔴 Live Stream
                                 </Typography>
                             </Grid>
                             <Grid item>
@@ -57,13 +56,16 @@ const WhiteNoiseCard = (props) => {
                         )}
                     </Grid>
                 </Box>
-                {/* <ReactAudioPlayer
-                    id="whiteNoiseAudioPlayer"
-                    src={WhiteNoiseSound}
-                    loop
-                    controls
-                    style={soundStyles}
-                /> */}
+                <iframe
+                    width="400"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/G-u5OhIeln4?si=MWt_z2dajsNGxnkD"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
             </CardContent>
         </Card>
     );
