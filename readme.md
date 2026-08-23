@@ -4,7 +4,7 @@
 
 # The Kelvin Kamara Sound App
 
-(05-Apr-2023) The Kelvin Kamara sound app is a background noise app. Made with ReactJS 16 and ElectronJS.
+(05-Apr-2023) The Kelvin Kamara sound app is a background noise app. Made with React 16 and ElectronJS.
 
 ## Contents
 
