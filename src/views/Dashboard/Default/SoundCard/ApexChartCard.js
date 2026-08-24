@@ -4,7 +4,7 @@ import { useTheme } from '@material-ui/styles';
 import { Box, Card, CardContent, CardHeader, Divider, Hidden, Grid, Typography, useMediaQuery } from '@material-ui/core';
 import ReactAudioPlayer from 'react-audio-player';
 
-import heavyRain from '../../../../assets/audio/HEAVY-RAIN-at-Night-10-Hours-for-Sleeping-Relax-Study-insomnia-Reduce-Stress-Heavy-Rain-Sounds-320-kbps.mp3';
+import restaurantAmbience from '../../../../assets/audio/RESTAURANT-AMBIENCE-10H-Busy-Coffee-Shop-Background-Noise-320-kbps.m4a';
 
 const soundStyles = {
     width: '100%',
@@ -75,12 +75,11 @@ const ApexChartCard = (props) => {
                     </Grid>
                     <Grid container direction={matchDownMd && !matchDownXs ? 'row' : 'column'}>
                         <label>
-                            HEAVY RAIN at Night 10 Hours for Sleeping, Relax, Study, insomnia,
-                            Reduce Stress. Heavy Rain Sounds <i>(320 kbps)</i>
+                            RESTAURANT AMBIENCE • 10H Busy Coffee Shop Background Noise <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
-                            id="heavyRainAudioPlayer1"
-                            src={heavyRain}
+                            id="restaurantAmbienceAudioPlayer1"
+                            src={restaurantAmbience}
                             loop
                             controls
                             style={soundStyles}
