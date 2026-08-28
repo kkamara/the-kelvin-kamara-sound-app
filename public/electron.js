@@ -4,30 +4,8 @@ const BrowserWindow = electron.BrowserWindow;
 const path = require('path');
 
 const inProduction = app.isPackaged;
-const appReferrer = 'https://github.com/kkamara/the-kelvin-kamara-sound-app';
 
 let mainWindow;
-
-function configureYoutubeReferrer() {
-    electron.session.defaultSession.webRequest.onBeforeSendHeaders(
-        { urls: ['*://*.youtube.com/*', '*://*.youtube-nocookie.com/*'] },
-        (details, callback) => {
-            const referrerHeader = Object.keys(details.requestHeaders).find(
-                (header) => header.toLowerCase() === 'referer'
-            );
-            const referrer = referrerHeader && details.requestHeaders[referrerHeader];
-
-            if (!referrer || referrer.startsWith('file:')) {
-                if (referrerHeader) {
-                    delete details.requestHeaders[referrerHeader];
-                }
-                details.requestHeaders.Referer = appReferrer;
-            }
-
-            callback({ requestHeaders: details.requestHeaders });
-        }
-    );
-}
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -47,12 +25,7 @@ function createWindow() {
     mainWindow.on('closed', () => (mainWindow = null));
 }
 
-app.on('ready', () => {
-    if (inProduction) {
-        configureYoutubeReferrer();
-    }
-    createWindow();
-});
+app.on('ready', createWindow);
 
 process.on("uncaughtException", err => {
     if (false === inProduction) {
