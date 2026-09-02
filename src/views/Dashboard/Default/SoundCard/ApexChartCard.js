@@ -4,7 +4,7 @@ import { useTheme } from '@material-ui/styles';
 import { Box, Card, CardContent, CardHeader, Divider, Hidden, Grid, Typography, useMediaQuery } from '@material-ui/core';
 import ReactAudioPlayer from 'react-audio-player';
 
-import restaurantAmbience from '../../../../assets/audio/RESTAURANT-AMBIENCE-10H-Busy-Coffee-Shop-Background-Noise-320-kbps.m4a';
+import asmrSound from '../../../../assets/audio/ASMR-DEEPEST-Inner-Ear-Tingles,-3D-Ear-Canal-+-Eardrum-Brain-Penetrating-Scraping-(No-Talking)-320-kbps.mp3';
 
 const soundStyles = {
     width: '100%',
@@ -75,11 +75,12 @@ const ApexChartCard = (props) => {
                     </Grid>
                     <Grid container direction={matchDownMd && !matchDownXs ? 'row' : 'column'}>
                         <label>
-                            RESTAURANT AMBIENCE • 10H Busy Coffee Shop Background Noise <i>(320 kbps)</i>
+                            ASMR DEEPEST Inner Ear Tingles, 3D Ear Canal + Eardrum
+                            Brain Penetrating Scraping (No Talking) <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
-                            id="restaurantAmbienceAudioPlayer1"
-                            src={restaurantAmbience}
+                            id="asmrAudioPlayer1"
+                            src={asmrSound}
                             loop
                             controls
                             style={soundStyles}
