@@ -167,9 +167,9 @@ const Default = () => {
                 <LatestorderCard title="Latest Order" />
             </Grid> */}
         </Grid>
-        <script 
+        <script
             async 
-            src="https://ukradiolive.com/public/jsv240708200025/jquery.embed-popup-player.js"
+            src="https://ukradiolive.com/public/jsv260906090525/jquery.embed-popup-player.js"
         ></script>
       </>
     );
