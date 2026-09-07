@@ -6,6 +6,7 @@ import RadioIcon from '@material-ui/icons/Radio';
 
 import timesRadioImage from "../../../../assets/images/radios/timesradio.png";
 import lbcRadioImage from "../../../../assets/images/radios/lbc.png";
+import bbcWorldServiceRadioImage from "../../../../assets/images/radios/bbcworldservice.jpg";
 
 import "./TalkingRadioCard.scss";
 
@@ -65,6 +66,19 @@ const TalkingRadioCard = (props) => {
                             <img 
                                 width="70px"
                                 src={lbcRadioImage}
+                                title="Start online radio!" 
+                                alt="Start online radio!"
+                            />
+                        </a>
+                        <a
+                            target="_blank"
+                            className="js-popupPlayer bbcWorldServiceAudioPlayer" 
+                            href="https://ukradiolive.com/bbc-world-service#server1142" 
+                            title="Start online radio!"
+                        >
+                            <img 
+                                width="70px"
+                                src={bbcWorldServiceRadioImage}
                                 title="Start online radio!" 
                                 alt="Start online radio!"
                             />
