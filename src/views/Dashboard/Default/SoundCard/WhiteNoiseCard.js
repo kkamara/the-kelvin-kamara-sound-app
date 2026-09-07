@@ -6,7 +6,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-ui/core';
 
-// import WhiteNoiseSound from '../../../../assets/audio/10-Hours-of-People-Talking-Ambience-White-Noise-256-kbps.mp3';
+import whiteNoiseSound from '../../../../assets/audio/AMSR-Sick-Person-Sounds-Sneezing,-Coughing,-and-Sniffling-for-Relaxation-320-kbps.m4a';
 
 const useStyles = makeStyles((theme) => ({
     content: {
@@ -35,7 +35,8 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    {/* Deep Techno 24/7 🔴 Live Stream */}
+                                    ASMR: Sick Person Sounds Sneezing, Coughing,
+                                    and Sniffling for Relaxation <i>(320 kbps)</i>
                                 </Typography>
                             </Grid>
                             <Grid item>
@@ -56,16 +57,13 @@ const WhiteNoiseCard = (props) => {
                         )}
                     </Grid>
                 </Box>
-                {/* <iframe
-                    width="400"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/G-u5OhIeln4?si=MWt_z2dajsNGxnkD"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                ></iframe> */}
+                <ReactAudioPlayer
+                    id="whiteNoiseAudioPlayer1"
+                    src={whiteNoiseSound}
+                    loop
+                    controls
+                    style={soundStyles}
+                />
             </CardContent>
         </Card>
     );

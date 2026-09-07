@@ -4,7 +4,7 @@ import { useTheme } from '@material-ui/styles';
 import { Box, Card, CardContent, CardHeader, Divider, Hidden, Grid, Typography, useMediaQuery } from '@material-ui/core';
 import ReactAudioPlayer from 'react-audio-player';
 
-import asmrSound from '../../../../assets/audio/ASMR-DEEPEST-Inner-Ear-Tingles,-3D-Ear-Canal-+-Eardrum-Brain-Penetrating-Scraping-(No-Talking)-320-kbps.mp3';
+import apexChartSound from '../../../../assets/audio/ASMR-DEEPEST-Inner-Ear-Tingles,-3D-Ear-Canal-+-Eardrum-Brain-Penetrating-Scraping-(No-Talking)-320-kbps.mp3';
 
 const soundStyles = {
     width: '100%',
@@ -79,8 +79,8 @@ const ApexChartCard = (props) => {
                             Brain Penetrating Scraping (No Talking) <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
-                            id="asmrAudioPlayer1"
-                            src={asmrSound}
+                            id="apexChartAudioPlayer1"
+                            src={apexChartSound}
                             loop
                             controls
                             style={soundStyles}
