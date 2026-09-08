@@ -63,6 +63,7 @@ const WhiteNoiseCard = (props) => {
                     loop
                     controls
                     style={soundStyles}
+                    volume={0.39}
                 />
             </CardContent>
         </Card>
