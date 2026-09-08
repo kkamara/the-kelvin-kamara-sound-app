@@ -14,7 +14,20 @@ const ApexChartCard = (props) => {
     const theme = useTheme();
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
     const matchDownXs = useMediaQuery(theme.breakpoints.down('xs'));
+    const audioPlayerRef = React.useRef(null);
     const { chartData } = props;
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            const audio = audioPlayerRef.current && audioPlayerRef.current.audioEl.current;
+
+            if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
+                audio.currentTime = Math.random() * audio.duration;
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <Card>
@@ -79,6 +92,7 @@ const ApexChartCard = (props) => {
                             Brain Penetrating Scraping (No Talking) <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
+                            ref={audioPlayerRef}
                             id="apexChartAudioPlayer1"
                             src={apexChartSound}
                             loop

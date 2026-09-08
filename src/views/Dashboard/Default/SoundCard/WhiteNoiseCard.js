@@ -1,4 +1,4 @@
-import React, { useEffect, } from 'react';
+import React, { useEffect, useRef, } from 'react';
 import { useTheme } from '@material-ui/styles';
 import Chart from 'react-apexcharts';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
@@ -22,10 +22,23 @@ const soundStyles = {
 const WhiteNoiseCard = (props) => {
     const classes = useStyles();
     const theme = useTheme();
+    const audioPlayerRef = useRef(null);
 
     const { bgColor, chartData, } = props;
 
-    const icon = <EqualizerIcon />
+    const icon = <EqualizerIcon />;
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const audio = audioPlayerRef.current && audioPlayerRef.current.audioEl.current;
+
+            if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
+                audio.currentTime = Math.random() * audio.duration;
+            }
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <Card>
@@ -58,6 +71,7 @@ const WhiteNoiseCard = (props) => {
                     </Grid>
                 </Box>
                 <ReactAudioPlayer
+                    ref={audioPlayerRef}
                     id="whiteNoiseAudioPlayer1"
                     src={whiteNoiseSound}
                     loop
