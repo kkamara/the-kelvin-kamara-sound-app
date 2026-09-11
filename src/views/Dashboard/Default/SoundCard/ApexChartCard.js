@@ -24,7 +24,7 @@ const ApexChartCard = (props) => {
             if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
                 audio.currentTime = Math.random() * audio.duration;
             }
-        }, 1500);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, []);
