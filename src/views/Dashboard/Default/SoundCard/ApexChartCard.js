@@ -98,7 +98,6 @@ const ApexChartCard = (props) => {
                             loop
                             controls
                             style={soundStyles}
-                            volume={0.15}
                         />
                     </Grid>
                 </Grid>
