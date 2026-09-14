@@ -24,7 +24,7 @@ const ApexChartCard = (props) => {
             if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
                 audio.currentTime = Math.random() * audio.duration;
             }
-        }, 2000);
+        }, 2500);
 
         return () => clearInterval(interval);
     }, []);
@@ -93,12 +93,11 @@ const ApexChartCard = (props) => {
                         </label>
                         <ReactAudioPlayer
                             ref={audioPlayerRef}
-                            id="apexChartAudioPlayer1"
+                            id="apexChartAudioPlayer"
                             src={apexChartSound}
                             loop
                             controls
                             style={soundStyles}
-                            volume={0.15}
                         />
                     </Grid>
                 </Grid>

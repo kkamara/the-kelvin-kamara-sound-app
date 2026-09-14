@@ -1,12 +1,11 @@
-import React, { useEffect, useRef, } from 'react';
+import React, { useRef, } from 'react';
 import { useTheme } from '@material-ui/styles';
 import Chart from 'react-apexcharts';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
-import ReactAudioPlayer from 'react-audio-player';
 
 import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-ui/core';
 
-import whiteNoiseSound from '../../../../assets/audio/AMSR-Sick-Person-Sounds-Sneezing,-Coughing,-and-Sniffling-for-Relaxation-320-kbps.m4a';
+// import whiteNoiseSound from '../../../../assets/audio/AMSR-Sick-Person-Sounds-Sneezing,-Coughing,-and-Sniffling-for-Relaxation-320-kbps.m4a';
 
 const useStyles = makeStyles((theme) => ({
     content: {
@@ -22,23 +21,23 @@ const soundStyles = {
 const WhiteNoiseCard = (props) => {
     const classes = useStyles();
     const theme = useTheme();
-    const audioPlayerRef = useRef(null);
+    // const audioPlayerRef = useRef(null);
 
     const { bgColor, chartData, } = props;
 
     const icon = <EqualizerIcon />;
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const audio = audioPlayerRef.current && audioPlayerRef.current.audioEl.current;
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         const audio = audioPlayerRef.current && audioPlayerRef.current.audioEl.current;
 
-            if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
-                audio.currentTime = Math.random() * audio.duration;
-            }
-        }, 5000);
+    //         if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
+    //             audio.currentTime = Math.random() * audio.duration;
+    //         }
+    //     }, 5000);
 
-        return () => clearInterval(interval);
-    }, []);
+    //     return () => clearInterval(interval);
+    // }, []);
 
     return (
         <Card>
@@ -48,8 +47,8 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    ASMR: Sick Person Sounds Sneezing, Coughing,
-                                    and Sniffling for Relaxation <i>(320 kbps)</i>
+                                    {/* ASMR: Sick Person Sounds Sneezing, Coughing,
+                                    and Sniffling for Relaxation <i>(320 kbps)</i> */}
                                 </Typography>
                             </Grid>
                             <Grid item>
@@ -70,15 +69,15 @@ const WhiteNoiseCard = (props) => {
                         )}
                     </Grid>
                 </Box>
-                <ReactAudioPlayer
+                {/* <ReactAudioPlayer
                     ref={audioPlayerRef}
-                    id="whiteNoiseAudioPlayer1"
+                    id="whiteNoiseAudioPlayer"
                     src={whiteNoiseSound}
                     loop
                     controls
                     style={soundStyles}
                     volume={0.39}
-                />
+                /> */}
             </CardContent>
         </Card>
     );
