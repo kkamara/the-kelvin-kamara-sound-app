@@ -47,8 +47,8 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    ASMR: Sick Person Sounds Sneezing, Coughing,
-                                    and Sniffling for Relaxation <i>(320 kbps)</i>
+                                    {/* ASMR: Sick Person Sounds Sneezing, Coughing,
+                                    and Sniffling for Relaxation <i>(320 kbps)</i> */}
                                 </Typography>
                             </Grid>
                             <Grid item>
