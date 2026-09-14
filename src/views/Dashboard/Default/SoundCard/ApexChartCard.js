@@ -93,7 +93,7 @@ const ApexChartCard = (props) => {
                         </label>
                         <ReactAudioPlayer
                             ref={audioPlayerRef}
-                            id="apexChartAudioPlayer1"
+                            id="apexChartAudioPlayer"
                             src={apexChartSound}
                             loop
                             controls
