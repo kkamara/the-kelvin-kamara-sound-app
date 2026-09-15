@@ -56,7 +56,6 @@ const MusicCard = (props) => {
                             loop
                             controls
                             style={soundStyles}
-                            volume={0.069}
                         />
                     </Grid>
                 </Grid>
