@@ -2,6 +2,8 @@ import React from 'react';
 import { useTheme } from '@material-ui/styles';
 import Chart from 'react-apexcharts';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
+import ReactAudioPlayer from "react-audio-player";
+import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-ui/core';
 
 import whiteNoiseSound from '../../../../assets/audio/Sweeping-High-Frequency-Noise-Ten-Hours-10-Tinnitus-Relief-ASMR-320-kbps.weba';
 
