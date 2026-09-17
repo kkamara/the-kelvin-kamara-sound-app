@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Chart from 'react-apexcharts';
 import { useTheme } from '@material-ui/styles';
 import { Box, Card, CardContent, CardHeader, Divider, Hidden, Grid, Typography, useMediaQuery } from '@material-ui/core';
@@ -14,15 +14,27 @@ const ApexChartCard = (props) => {
     const theme = useTheme();
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
     const matchDownXs = useMediaQuery(theme.breakpoints.down('xs'));
-    const audioPlayerRef = React.useRef(null);
+    const audioPlayerRef1 = React.useRef(null);
+    const audioPlayerRef2 = React.useRef(null);
+    const [volume, setVolume] = useState(1);
     const { chartData } = props;
+
+    // keeps both players in sync whenever either one's volume is changed
+    const handleVolumeChanged = (event) => {
+        setVolume(event.target.volume);
+    };
 
     React.useEffect(() => {
         const interval = setInterval(() => {
-            const audio = audioPlayerRef.current && audioPlayerRef.current.audioEl.current;
+            const audio1 = audioPlayerRef1.current && audioPlayerRef1.current.audioEl.current;
+            const audio2 = audioPlayerRef2.current && audioPlayerRef2.current.audioEl.current;
 
-            if (audio && Number.isFinite(audio.duration) && audio.duration > 0) {
-                audio.currentTime = Math.random() * audio.duration;
+            if (audio1 && Number.isFinite(audio1.duration) && audio1.duration > 0) {
+                audio1.currentTime = Math.random() * audio1.duration;
+            }
+
+            if (audio2 && Number.isFinite(audio2.duration) && audio2.duration > 0) {
+                audio2.currentTime = Math.random() * audio2.duration;
             }
         }, 2500);
 
@@ -92,9 +104,21 @@ const ApexChartCard = (props) => {
                             Brain Penetrating Scraping (No Talking) <i>(320 kbps)</i>
                         </label>
                         <ReactAudioPlayer
-                            ref={audioPlayerRef}
-                            id="apexChartAudioPlayer"
+                            ref={audioPlayerRef1}
+                            id="apexChartAudioPlayer1"
                             src={apexChartSound}
+                            volume={volume}
+                            onVolumeChanged={handleVolumeChanged}
+                            loop
+                            controls
+                            style={soundStyles}
+                        />
+                        <ReactAudioPlayer
+                            ref={audioPlayerRef2}
+                            id="apexChartAudioPlayer2"
+                            src={apexChartSound}
+                            volume={volume}
+                            onVolumeChanged={handleVolumeChanged}
                             loop
                             controls
                             style={soundStyles}
