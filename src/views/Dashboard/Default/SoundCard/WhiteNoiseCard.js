@@ -2,10 +2,10 @@ import React from 'react';
 import { useTheme } from '@material-ui/styles';
 import Chart from 'react-apexcharts';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
-import ReactAudioPlayer from "react-audio-player";
+// import ReactAudioPlayer from "react-audio-player";
 import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-ui/core';
 
-import whiteNoiseSound from '../../../../assets/audio/Sweeping-High-Frequency-Noise-Ten-Hours-10-Tinnitus-Relief-ASMR-320-kbps.weba';
+// import whiteNoiseSound from '../../../../assets/audio/Sweeping-High-Frequency-Noise-Ten-Hours-10-Tinnitus-Relief-ASMR-320-kbps.weba';
 
 const useStyles = makeStyles((theme) => ({
     content: {
@@ -33,8 +33,8 @@ const WhiteNoiseCard = (props) => {
                         <Grid item container justifyContent="space-between" alignItems="center">
                             <Grid item>
                                 <Typography variant="subtitle1" color="inherit">
-                                    Sweeping High Frequency Noise Ten Hours
-                                    10 - Tinnitus Relief - ASMR <i>(320 kbps)</i>
+                                    {/* Sweeping High Frequency Noise Ten Hours
+                                    10 - Tinnitus Relief - ASMR <i>(320 kbps)</i> */}
                                 </Typography>
                             </Grid>
                             <Grid item>
@@ -55,13 +55,13 @@ const WhiteNoiseCard = (props) => {
                         )}
                     </Grid>
                 </Box>
-                <ReactAudioPlayer
+                {/* <ReactAudioPlayer
                     id="whiteNoiseAudioPlayer"
                     src={whiteNoiseSound}
                     loop
                     controls
                     style={soundStyles}
-                />
+                /> */}
             </CardContent>
         </Card>
     );
