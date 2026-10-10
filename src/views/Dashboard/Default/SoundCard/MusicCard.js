@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const soundStyles = {
-    width: '300px',
+    width: '225px',
 };
 
 const MusicCard = (props) => {
