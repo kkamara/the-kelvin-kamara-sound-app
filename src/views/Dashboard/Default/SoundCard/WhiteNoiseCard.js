@@ -9,7 +9,7 @@ import { Box, Card, CardContent, Grid, makeStyles, Typography } from '@material-
 
 const useStyles = makeStyles((theme) => ({
     content: {
-        paddingBottom: '0px !important',
+        padding: '0px !important',
     },
 }));
 
