@@ -24,6 +24,8 @@ function createWindow() {
     mainWindow.loadURL('http://localhost:3000');
   }
 
+  mainWindow.maximize();
+
   mainWindow.on('closed', () => (mainWindow = null));
 }
 
