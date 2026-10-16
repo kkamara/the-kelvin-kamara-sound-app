@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const soundStyles = {
-    width: '100%',
-};
+// const soundStyles = {
+//     width: '100%',
+// };
 
 const WhiteNoiseCard = (props) => {
     const classes = useStyles();

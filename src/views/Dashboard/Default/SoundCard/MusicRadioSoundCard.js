@@ -18,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const soundStyles = {
-    width: '300px',
-};
-
 const MusicRadioSoundCard = (props) => {
     const { color, } = props;
     const classes = useStyles();

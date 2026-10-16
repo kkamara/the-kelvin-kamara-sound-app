@@ -4,7 +4,7 @@ import { makeStyles, Card, CardContent, Grid, Typography } from '@material-ui/co
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import GraphicEqIcon from '@material-ui/icons/GraphicEq';
 
-import smoothRadioImage from "../../../../assets/images/radios/smoothradio.png";
+import bbc1XtraRadioImage from "../../../../assets/images/radios/bbc1xtra.svg";
 
 const useStyles = makeStyles((theme) => ({
     secondary: {
@@ -18,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.common.white,
     },
 }));
-
-const soundStyles = {
-    width: '300px',
-};
 
 const MusicRadioSoundCard2 = (props) => {
     const { color, } = props;
@@ -52,12 +48,12 @@ const MusicRadioSoundCard2 = (props) => {
                         <a 
                             target="_blank"
                             className="js-popupPlayer smoothRadioAudioPlayer" 
-                            href="https://ukradiolive.com/smooth-radio#server652" 
+                            href="https://ukradiolive.com/bbc-1xtra#server1316" 
                             title="Start online radio!"
                         >
                             <img 
-                                width="94px"
-                                src={smoothRadioImage} 
+                                width="85px"
+                                src={bbc1XtraRadioImage} 
                                 title="Start online radio!" 
                                 alt="Start online radio!"
                             />
