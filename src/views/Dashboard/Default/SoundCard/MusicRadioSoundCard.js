@@ -51,7 +51,8 @@ const MusicRadioSoundCard = (props) => {
                             title="Start online radio!"
                         >
                             <img 
-                                width="94px"
+                                width="85px"
+                                height="70px"
                                 src={radioXClassicRockRadioImage} 
                                 title="Start online radio!" 
                                 alt="Start online radio!"
