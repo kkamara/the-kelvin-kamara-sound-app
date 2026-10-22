@@ -1,12 +1,13 @@
 {
   "name": "the-kelvin-kamara-sound-app",
-  "version": "4.63.0",
+  "version": "4.64.0",
   "author": "https://www.github.com/kkamara",
   "private": true,
   "main": "public/electron.js",
   "homepage": "./",
   "build": {
-    "appId": "<com.kelvinkamara>"
+    "appId": "com.kelvinkamara.soundapp",
+    "productName": "The Kelvin Kamara Sound App"
   },
   "scripts": {
     "react-start": "react-scripts start",
@@ -15,7 +16,8 @@
     "react-eject": "react-scripts eject",
     "release": "cross-env NODE_OPTIONS=--openssl-legacy-provider electron-builder --win --x64 --publish never",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider npm run react-build && npm run release",
-    "start": "concurrently \"cross-env BROWSER=none NODE_OPTIONS=--openssl-legacy-provider npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
+    "start": "concurrently \"cross-env BROWSER=none NODE_OPTIONS=--openssl-legacy-provider npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
+    "dev": "npm run start"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.11.0",
@@ -54,7 +56,6 @@
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
     "react-draggable": "^4.4.3",
-    "react-helmet": "^6.1.0",
     "react-images-uploading": "^3.1.2",
     "react-intl": "^5.13.4",
     "react-modal": "^3.16.1",

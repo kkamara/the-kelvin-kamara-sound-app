@@ -8,7 +8,6 @@ import {
     Typography,
 } from '@material-ui/core';
 import { useTheme, } from '@material-ui/core/styles';
-import { Helmet, } from 'react-helmet'
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import DescriptionTwoTone from '@material-ui/icons/DescriptionTwoTone';
 
@@ -68,7 +67,6 @@ const Default = () => {
 
     return (
       <>
-        <Helmet><title>The Kelvin Kamara Sound App</title> </Helmet>
         <Grid container spacing={gridSpacing}>
             <Grid item xs={12}>
                 <Grid container spacing={gridSpacing}>
