@@ -82,8 +82,8 @@ export default {
     items: [
         {
             id: 'navigation',
-            title: 'Materially',
-            caption: 'Dashboard & Widgets',
+            title: 'The Kelvin Kamara Sound App',
+            caption: 'Soundscape',
             type: 'group',
             icon: icons['NavigationOutlinedIcon'],
             children: [

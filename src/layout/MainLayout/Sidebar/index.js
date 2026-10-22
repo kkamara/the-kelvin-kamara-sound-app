@@ -62,8 +62,9 @@ const MainLayout = (props) => {
                     spacing={0}
                     className={[classes.toolbar, classes.logoContainer].join(' ')}
                 >
-                    <Grid item>
-                        <img src={logo} alt="Logo" />
+                    <Grid item style={{ color: "#fff" }}>
+                        {/* <img src={logo} alt="Logo" /> */}
+                        The Kelvin Kamara Sound App
                     </Grid>
                 </Grid>
             </Hidden>

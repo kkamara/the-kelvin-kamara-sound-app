@@ -46,7 +46,8 @@ const Header = (props) => {
                     <Hidden smDown>
                         <Grid item>
                             <Box mt={0.5}>
-                                <img src={logo} alt="Logo" />
+                                {/* <img src={logo} alt="Logo" /> */}
+                                The Kelvin Kamara Sound App
                             </Box>
                         </Grid>
                     </Hidden>
@@ -63,12 +64,12 @@ const Header = (props) => {
                     </Grid>
                 </Grid>
             </Box>
-            <div className={classes.grow} />
+            {/* <div className={classes.grow} />
 
             <SearchSection theme="light" />
             <Customization />
             <NotificationSection />
-            <ProfileSection />
+            <ProfileSection /> */}
         </React.Fragment>
     );
 };
